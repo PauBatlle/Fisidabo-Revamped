@@ -1,0 +1,58 @@
+Reunió Fisidabo 4-oct-2017
+
+Què tenim per posar al paper?
+Introducció
+	Objectiu: Analitzar/Modelitzar el moviment d'una pilota sobre un llit i mirar si es pot establir un paral·lelisme amb moviment en relativitat
+	Breu intro a la relativitat i explicar el que fas i que farem servir un model classic
+Experimental --> Explicar el fisidabo's day
+Data Analysis
+	Particle Tracking
+		Simplement saber com es van treure les trajectòries
+	Forma del llit elàstic
+		Amb el GIMP corregeixes la perspectiva i trobes un mostreig de la corba en un eix --> * Aproximació per exponencial i simetria el·líptica
+	Paràmetres
+		Forma del llit elàstic 
+			Els de l'exponencial --> Òptim per mínims quadràtics i ens movem al voltant (a,b) f = a*exp(br)
+			Els de la simetria el·líptica --> Relació entre els dos eixos 
+		Comportament de la bola en el llit (aquests no són pròpiament de data analysis)
+			*Coef de fricció (que suposem que és fricció estàtica)
+			*Spin inicial de la pilota (eb3)
+	Anàlisi de l'òrbita
+Model Selection/Optimització
+	Model puntual (eb2)
+		Explicar el model
+		Optimitzar bé
+	Model esfèric (eb3)
+		Explicar el model 
+		Optimitzar bé
+	'Relativitat'
+		Treure paràmetres òrbites
+		L**2 T**-2(1-e**2) (Usant els paràmetres de l'anàlisi de l'òrbita tant amb els reals com amb els modelats)
+		Comentes perquè ha sortit malament
+			L'Adam diu que les geodèsiques no xuten --> No fan òrbites tancades. Cal buscar més info
+			Possible conclusió --> (Acabes concloent que el paral·lelisme no és bo)			
+Results & Discussion
+	En general, es pot baixar la fricció aviam si dona millors valors de LTe
+	Parlar dels resultats de la optimització en cada cas. Compares la performance dels models i "esculls". 
+Conclusion	
+	Acabes mirant aviam si el paral·lelisme era bo (que no té pinta xd)
+	Potser està al límit del caòtic i per això és tan difícil de modelitzar 
+
+
+Què fem a partir d'ara
+
+Pau
+	Òrbites: Funció que donada una trajectòria optimitzi els exponents 
+	Precalcular llits elàstics com un cabró i optimitzar
+	Redactar i fer preguntes, etc.
+	Mirar derivades discretes
+Adam
+	Arreglar programa simulació llit elàstic
+	Arreglar els èboles (adaptant-los a la nova forma de calcular la forma del llit) 
+
+Isabul & Lloberita
+	Contestar les preguntes a en Pau
+
+Sobre com optimitzar llits elàstics:
+Trobar l'òptim comparant-lo amb el llit normal, i després deixa-rho variar abans d'enxufar al programa i decidim com
+ 

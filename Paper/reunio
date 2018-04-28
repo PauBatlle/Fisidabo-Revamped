@@ -1,0 +1,21 @@
+Reunió 8-oct Pau-Adam sobre petits detalls d'optimitzacions
+
+Dades astronòmiques
+  El perihelion precession és negatiu i tito Einstein diu que positiu --> ROP
+    Optimitzem igualment i surten constants sense puto sentit, lo qual ens diu més fort que el model és relativista és una merda
+  L'adam aprova la def de totes les dades proposades por J.Llobera
+  Es podria redactar ja alguna cosa
+
+Llit elàstic
+  El programa de l'Adam funciona molt bé. Cal buscar una forma d'evaluar quan bo és un llit
+    El model dóna punts discrets, i la realitat també la tenim mesurada en discret
+      Què passem a continu, què té més sentit? (I com ho fem, lineal a trossos?)
+	El resultat de la simulació restringit en l'eix X s'interpola i es mesura la distància quadràtica amb les mesures de la realitat (discretes)  
+      Mirarem si hi ha molta diferència entre el lineal a trossos i el cúbic en el resultat de la simulacio
+    Per despres fer les derivades provaríem cúbic + autograd avera si xuta??
+
+Brief note de la feina de JLL i IM
+  Adam dóna OK q redactin fisidabo day + video particle tracking, si els hi va bé
+  En Joan s'hauria de mirar resultats dades astronòmiques
+  Quan acabin tenim més feina per ells, sobretot en temes de redacció d'introducció
+

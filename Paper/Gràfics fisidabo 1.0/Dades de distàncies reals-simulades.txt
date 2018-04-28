@@ -1,0 +1,8 @@
+Distància al quadrat de la take 1 6.35345805846
+Distància al quadrat mitjana de la take 1 0.00958289299919
+Distància al quadrat de la take 2 3.19887191455
+Distància al quadrat mitjana de la take 2 0.0036023332371
+Distància al quadrat de la take 3 3.7988543405
+Distància al quadrat mitjana de la take 3 0.00394481239927
+Distància al quadrat de la take 4 1.15504073978
+Distància al quadrat mitjana de la take 4 0.00351076212698
