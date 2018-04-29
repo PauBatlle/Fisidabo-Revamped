@@ -4,8 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 #from IPython.display import display, Math, Latex
 
-# In[2]:
-
 #Paràmetres
 #Fricció
 mu = 0.03
