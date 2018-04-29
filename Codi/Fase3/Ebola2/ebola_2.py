@@ -58,7 +58,4 @@ def ebola2(c, k, sigma, mu, steps, timestep, x, y, vx, vy, take, escriu = False)
     o = np.column_stack((time, pos[:,0], pos[:,1], pos[:,2], vel[:,0], vel[:,1], vel[:,2], acc[:,0], acc[:,1], acc[:,2], energy, error))
     columnes = ['time','x','y','z','vx','vy','vz','ax','ay','az', 'energy', 'error']
     dataf = pd.DataFrame(data = o, columns = columnes)
-    if escriu:
-        fitness = distancia(dataf, "Dades_takes/"+str(take)+"Cart.csv")[0]
-        exporta(dataf, "eb2"+"-take"+str(take)+"r-fitness = "+str(fitness)+"-c="+str(c)+"-k="+str(k)+"-sigma="+str(sigma)+"-mu="+str(mu))
     return dataf
