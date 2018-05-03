@@ -214,7 +214,7 @@ def ebola3(mu, nu, spininicial, xg, yg, vxg, vyg, length):
 		    vspin = np.linalg.det([n_t, N_, v_o])/n #intentar buscar com fer un determinant
 		    
 		    if (abs(spin) > 1e-3):
-		         vspin = vspin - nu*spin/abs(spin)
+		         vspin = vspin - nu*spin*Fn/abs(spin)
 		    
 		    return np.array([v_p, v_o, a_o, vspin])
 
