@@ -49,6 +49,11 @@ def nova_fitness(v, factor = 1):
     ebolab = ebola2(c, k, sigma, mu, len(d2p)*factor, (1/180)/factor,x02,y02,vx02,vy02,"dummy",False)[['x','y']]
     ebolac = ebola2(c, k, sigma, mu, len(d3p)*factor, (1/180)/factor,x03,y03,vx03,vy03,"dummy",False)[['x','y']]
     ebolad = ebola2(c, k, sigma, mu, len(d4p)*factor, (1/180)/factor,x04,y04,vx04,vy04,"dummy",False)[['x','y']]
-    resultat = 0.25*(dq(ebolaa, d1p, factor)+dq(ebolab,d2p, factor)+dq(ebolac,d3p, factor)+dq(ebolad,d4p, factor))
-    esc("results.csv", [c, k, sigma, mu, resultat])
+    A = dq(ebolaa, d1p, factor)
+    B = dq(ebolab,d2p, factor)
+    C = dq(ebolac,d3p, factor)
+    D = dq(ebolad,d4p, factor)
+    resultat = 0.25*(A+B+C+D)
+    #esc("results.csv", [c, k, sigma, mu, resultat])
+    #print(resultat, A, B, C, D)
     return resultat

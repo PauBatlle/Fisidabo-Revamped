@@ -1,6 +1,6 @@
 import numpy as np 
 import pandas as pd 
-from ebola3final import ebola3
+from ebola3_custom_llit import ebola3
 from llegeix_escriu import esc
 
 def dq(a,b,factor = 1):
@@ -43,9 +43,8 @@ def nova_fitness(v, factor = 1):
     [mu,nu,spin0] = v
     ebolaa = ebola3(mu, nu, spin0, x01, y01, vx01, vy01, len(d1p)-1)
     ebolab = ebola3(mu, nu, spin0, x02, y02, vx02, vy02, len(d2p)-1)
-    ebolac = ebola3(mu, nu, spin0, x03, y03, vx03, vy03, len(d3p))
+    ebolac = ebola3(mu, nu, spin0, x03, y03, vx03, vy03, len(d3p)-1)
     ebolad = ebola3(mu, nu, spin0, x04, y04, vx04, vy04, len(d4p)-1)
     resultat = 0.25*(dq(ebolaa, d1p, factor)+dq(ebolab,d2p, factor)+dq(ebolac,d3p, factor)+dq(ebolad,d4p, factor))
-    esc("results.csv", [mu,nu,spin0,resultat])
     return resultat
 print(nova_fitness([0.4,0.2,0]))

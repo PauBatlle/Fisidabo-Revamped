@@ -1,0 +1,95 @@
+Warning: Maximum number of function evaluations has been exceeded.
+ final_simplex: (array([[ 0.37798067,  0.5578092 ,  1.08542748,  0.01593851],
+       [ 0.3767536 ,  0.55960449,  1.08463875,  0.01587272],
+       [ 0.37701933,  0.56026227,  1.08499777,  0.01573613],
+       [ 0.38277451,  0.55145568,  1.08566766,  0.01593474],
+       [ 0.3813314 ,  0.5552348 ,  1.0826626 ,  0.01580191]]), array([ 3.67450781,  3.67560638,  3.67575735,  3.67659034,  3.67683296]))
+           fun: 3.6745078050353164
+       message: 'Maximum number of function evaluations has been exceeded.'
+          nfev: 800
+           nit: 482
+        status: 1
+       success: False
+             x: array([ 0.37798067,  0.5578092 ,  1.08542748,  0.01593851])
+Optimization terminated successfully.
+         Current function value: 85.543145
+         Iterations: 12
+         Function evaluations: 25
+ final_simplex: (array([[-0.00089375],
+       [-0.0009    ]]), array([ 85.54314453,  85.54320133]))
+           fun: 85.543144534040465
+       message: 'Optimization terminated successfully.'
+          nfev: 25
+           nit: 12
+        status: 0
+       success: True
+             x: array([-0.00089375])
+Optimization terminated successfully.
+         Current function value: 38.624594
+         Iterations: 83
+         Function evaluations: 216
+ final_simplex: (array([[ 0.95973529,  0.24533985],
+       [ 0.95973529,  0.24533985],
+       [ 0.95973529,  0.24533985]]), array([ 38.62459444,  38.62459972,  38.62464498]))
+           fun: 38.624594437184165
+       message: 'Optimization terminated successfully.'
+          nfev: 216
+           nit: 83
+        status: 0
+       success: True
+             x: array([ 0.95973529,  0.24533985])
+Optimization terminated successfully.
+         Current function value: 7.905892
+         Iterations: 499
+         Function evaluations: 810
+ final_simplex: (array([[ 0.11405622,  2.76747461,  1.06878845,  0.00550408, -0.01370782,
+         0.01455715],
+       [ 0.11405586,  2.76748629,  1.06879026,  0.00550411, -0.01370792,
+         0.01455721],
+       [ 0.11405508,  2.76751755,  1.06878865,  0.0055042 , -0.01370813,
+         0.01455735],
+       [ 0.114055  ,  2.76753257,  1.06878182,  0.00550424, -0.01370818,
+         0.0145574 ],
+       [ 0.11405525,  2.76752244,  1.06878698,  0.00550421, -0.01370815,
+         0.01455737],
+       [ 0.11405828,  2.76741963,  1.06878122,  0.00550394, -0.01370738,
+         0.01455687],
+       [ 0.11405841,  2.76741789,  1.06878034,  0.00550394, -0.01370737,
+         0.01455687]]), array([ 7.9058916 ,  7.90589255,  7.90589475,  7.90590318,  7.90590959,
+        7.90590997,  7.90591563]))
+           fun: 7.9058916002536108
+       message: 'Optimization terminated successfully.'
+          nfev: 810
+           nit: 499
+        status: 0
+       success: True
+             x: array([ 0.11405622,  2.76747461,  1.06878845,  0.00550408, -0.01370782,
+        0.01455715])
+Warning: Maximum number of function evaluations has been exceeded.
+ final_simplex: (array([[ 0.02899161,  0.01699199, -0.05408266],
+       [ 0.02899161,  0.01699199, -0.05408266],
+       [ 0.02899161,  0.01699199, -0.05408266],
+       [ 0.02899161,  0.01699199, -0.05408266]]), array([ 54.27939157,  85.35758813,  85.35758813,  85.35758813]))
+           fun: 54.279391572630416
+       message: 'Maximum number of function evaluations has been exceeded.'
+          nfev: 604
+           nit: 186
+        status: 1
+       success: False
+             x: array([ 0.02899161,  0.01699199, -0.05408266])
+Optimization terminated successfully.
+         Current function value: 44.735106
+         Iterations: 146
+         Function evaluations: 292
+ final_simplex: (array([[ 0.87328938,  0.02601778, -0.12340285, -0.02498753],
+       [ 0.87328934,  0.02601777, -0.12340282, -0.02498752],
+       [ 0.87328939,  0.02601778, -0.12340284, -0.02498753],
+       [ 0.87328934,  0.02601777, -0.12340281, -0.02498752],
+       [ 0.87328937,  0.02601778, -0.12340285, -0.02498753]]), array([ 44.73510558,  44.73513326,  44.73513439,  44.7351365 ,  44.73519483]))
+           fun: 44.735105575517984
+       message: 'Optimization terminated successfully.'
+          nfev: 292
+           nit: 146
+        status: 0
+       success: True
+             x: array([ 0.87328938,  0.02601778, -0.12340285, -0.02498753])

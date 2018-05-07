@@ -1,0 +1,102 @@
+[0;31mSignature:[0m [0mnp[0m[0;34m.[0m[0mmin[0m[0;34m([0m[0ma[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0mout[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0mkeepdims[0m[0;34m=[0m[0;34m<[0m[0;32mclass[0m [0;34m'numpy._globals._NoValue'[0m[0;34m>[0m[0;34m)[0m[0;34m[0m[0m
+[0;31mSource:[0m   
+[0;32mdef[0m [0mamin[0m[0;34m([0m[0ma[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0mout[0m[0;34m=[0m[0;32mNone[0m[0;34m,[0m [0mkeepdims[0m[0;34m=[0m[0mnp[0m[0;34m.[0m[0m_NoValue[0m[0;34m)[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m    [0;34m"""[0m
+[0;34m    Return the minimum of an array or minimum along an axis.[0m
+[0;34m[0m
+[0;34m    Parameters[0m
+[0;34m    ----------[0m
+[0;34m    a : array_like[0m
+[0;34m        Input data.[0m
+[0;34m    axis : None or int or tuple of ints, optional[0m
+[0;34m        Axis or axes along which to operate.  By default, flattened input is[0m
+[0;34m        used.[0m
+[0;34m[0m
+[0;34m        .. versionadded:: 1.7.0[0m
+[0;34m[0m
+[0;34m        If this is a tuple of ints, the minimum is selected over multiple axes,[0m
+[0;34m        instead of a single axis or all the axes as before.[0m
+[0;34m    out : ndarray, optional[0m
+[0;34m        Alternative output array in which to place the result.  Must[0m
+[0;34m        be of the same shape and buffer length as the expected output.[0m
+[0;34m        See `doc.ufuncs` (Section "Output arguments") for more details.[0m
+[0;34m[0m
+[0;34m    keepdims : bool, optional[0m
+[0;34m        If this is set to True, the axes which are reduced are left[0m
+[0;34m        in the result as dimensions with size one. With this option,[0m
+[0;34m        the result will broadcast correctly against the input array.[0m
+[0;34m[0m
+[0;34m        If the default value is passed, then `keepdims` will not be[0m
+[0;34m        passed through to the `amin` method of sub-classes of[0m
+[0;34m        `ndarray`, however any non-default value will be.  If the[0m
+[0;34m        sub-classes `sum` method does not implement `keepdims` any[0m
+[0;34m        exceptions will be raised.[0m
+[0;34m[0m
+[0;34m    Returns[0m
+[0;34m    -------[0m
+[0;34m    amin : ndarray or scalar[0m
+[0;34m        Minimum of `a`. If `axis` is None, the result is a scalar value.[0m
+[0;34m        If `axis` is given, the result is an array of dimension[0m
+[0;34m        ``a.ndim - 1``.[0m
+[0;34m[0m
+[0;34m    See Also[0m
+[0;34m    --------[0m
+[0;34m    amax :[0m
+[0;34m        The maximum value of an array along a given axis, propagating any NaNs.[0m
+[0;34m    nanmin :[0m
+[0;34m        The minimum value of an array along a given axis, ignoring any NaNs.[0m
+[0;34m    minimum :[0m
+[0;34m        Element-wise minimum of two arrays, propagating any NaNs.[0m
+[0;34m    fmin :[0m
+[0;34m        Element-wise minimum of two arrays, ignoring any NaNs.[0m
+[0;34m    argmin :[0m
+[0;34m        Return the indices of the minimum values.[0m
+[0;34m[0m
+[0;34m    nanmax, maximum, fmax[0m
+[0;34m[0m
+[0;34m    Notes[0m
+[0;34m    -----[0m
+[0;34m    NaN values are propagated, that is if at least one item is NaN, the[0m
+[0;34m    corresponding min value will be NaN as well. To ignore NaN values[0m
+[0;34m    (MATLAB behavior), please use nanmin.[0m
+[0;34m[0m
+[0;34m    Don't use `amin` for element-wise comparison of 2 arrays; when[0m
+[0;34m    ``a.shape[0]`` is 2, ``minimum(a[0], a[1])`` is faster than[0m
+[0;34m    ``amin(a, axis=0)``.[0m
+[0;34m[0m
+[0;34m    Examples[0m
+[0;34m    --------[0m
+[0;34m    >>> a = np.arange(4).reshape((2,2))[0m
+[0;34m    >>> a[0m
+[0;34m    array([[0, 1],[0m
+[0;34m           [2, 3]])[0m
+[0;34m    >>> np.amin(a)           # Minimum of the flattened array[0m
+[0;34m    0[0m
+[0;34m    >>> np.amin(a, axis=0)   # Minima along the first axis[0m
+[0;34m    array([0, 1])[0m
+[0;34m    >>> np.amin(a, axis=1)   # Minima along the second axis[0m
+[0;34m    array([0, 2])[0m
+[0;34m[0m
+[0;34m    >>> b = np.arange(5, dtype=np.float)[0m
+[0;34m    >>> b[2] = np.NaN[0m
+[0;34m    >>> np.amin(b)[0m
+[0;34m    nan[0m
+[0;34m    >>> np.nanmin(b)[0m
+[0;34m    0.0[0m
+[0;34m[0m
+[0;34m    """[0m[0;34m[0m
+[0;34m[0m    [0mkwargs[0m [0;34m=[0m [0;34m{[0m[0;34m}[0m[0;34m[0m
+[0;34m[0m    [0;32mif[0m [0mkeepdims[0m [0;32mis[0m [0;32mnot[0m [0mnp[0m[0;34m.[0m[0m_NoValue[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0mkwargs[0m[0;34m[[0m[0;34m'keepdims'[0m[0;34m][0m [0;34m=[0m [0mkeepdims[0m[0;34m[0m
+[0;34m[0m    [0;32mif[0m [0mtype[0m[0;34m([0m[0ma[0m[0;34m)[0m [0;32mis[0m [0;32mnot[0m [0mmu[0m[0;34m.[0m[0mndarray[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m        [0;32mtry[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m            [0mamin[0m [0;34m=[0m [0ma[0m[0;34m.[0m[0mmin[0m[0;34m[0m
+[0;34m[0m        [0;32mexcept[0m [0mAttributeError[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m            [0;32mpass[0m[0;34m[0m
+[0;34m[0m        [0;32melse[0m[0;34m:[0m[0;34m[0m
+[0;34m[0m            [0;32mreturn[0m [0mamin[0m[0;34m([0m[0maxis[0m[0;34m=[0m[0maxis[0m[0;34m,[0m [0mout[0m[0;34m=[0m[0mout[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m
+[0;34m[0m[0;34m[0m
+[0;34m[0m    [0;32mreturn[0m [0m_methods[0m[0;34m.[0m[0m_amin[0m[0;34m([0m[0ma[0m[0;34m,[0m [0maxis[0m[0;34m=[0m[0maxis[0m[0;34m,[0m[0;34m[0m
+[0;34m[0m                          [0mout[0m[0;34m=[0m[0mout[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0m
+[0;31mFile:[0m      /usr/local/lib/python3.5/dist-packages/numpy/core/fromnumeric.py
+[0;31mType:[0m      function

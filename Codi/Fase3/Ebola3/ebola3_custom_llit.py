@@ -221,7 +221,7 @@ def ebola3(mu, nu, spininicial, xg, yg, vxg, vyg, length):
 		    #Definicions/Inicialització
 
 		#Part temporal
-		steps = int(temps * stepspersegon)  #Bàsicament, definim implícitament mida del timestep
+		steps = length #Bàsicament, definim implícitament mida del timestep
 		mida = steps + 1
 		tmax = temps   
 		timestep = tmax/steps
@@ -331,14 +331,3 @@ def ebola3(mu, nu, spininicial, xg, yg, vxg, vyg, length):
 	#plt.show()
 	return np.array(r_o)
 
-"""
-dades = [pd.read_csv("../Data/"+str(i)+"Cart.csv") for i in range(1,5)]
-d1 = dades[0]
-x01 = d1["x"][175]
-y01 = d1["y"][175]
-vx01 = d1["vx"][175]
-vy01 = d1["vy"][175]
-d1p = dades[0].iloc[175:838]
-
-print(ebola3(0.01, 0.1, 0, x01,y01,vx01,vy01, len(d1)))
-"""
