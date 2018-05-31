@@ -1,0 +1,82 @@
+
+f1
+
+fun: 1.2738671573961504
+       message: 'Optimization terminated successfully.'
+          nfev: 704
+           nit: 426
+        status: 0
+       success: True
+             x: array([ 0.26951544,  1.11203237,  0.94709141,  0.02005412,  0.11674462,
+        2.15030078])
+
+
+f2
+
+ fun: 0.29391412910723813
+       message: 'Optimization terminated successfully.'
+          nfev: 412
+           nit: 230
+        status: 0
+       success: True
+             x: array([ 3.74729509,  0.19025623,  1.12162367,  0.00762243,  0.5570183 ,
+        3.80019141])
+
+
+f3
+
+ fun: 0.55676942645350058
+       message: 'Optimization terminated successfully.'
+          nfev: 822
+           nit: 515
+        status: 0
+       success: True
+             x: array([ 2.3432343 ,  0.21247422,  1.04852414,  0.01279455,  0.10957865,
+        2.60626072])
+
+
+
+f4
+
+
+fun: 0.0027448425517355027
+       message: 'Optimization terminated successfully.'
+          nfev: 1063
+           nit: 676
+        status: 0
+       success: True
+             x: array([ 2.08050412,  0.42154183,  1.06881135,  0.00395291, -0.02453657,
+       -3.3707517 ])
+
+
+ global:
+
+  fun: 2.205694181441503
+       message: 'Optimization terminated successfully.'
+          nfev: 696
+           nit: 448
+        status: 0
+       success: True
+             x: array([ 1.04494076,  0.0069809 ,  0.04363076, -3.56851426, -4.49177342,
+       -4.32438228, -3.774654  ]
+
+
+optim3 ck fixes 
+[ 1.04743081,  0.00941941,  0.01616359, -3.92741678]
+
+optim2 ckfixes
+0.99964116,  0.4002429
+
+gggglobal3
+
+       fun: 1.8434911512510084
+       message: 'Optimization terminated successfully.'
+          nfev: 1242
+           nit: 855
+        status: 0
+       success: True
+             x: array([ 2.40447123,  0.4334582 ,  1.03953586,  0.00563565,  0.04651377,
+       -4.14025028, -5.08209939, -5.04849853, -3.87803024])
+
+
+

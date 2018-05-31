@@ -8,7 +8,7 @@ import numpy as np
 import pickle
 
 
-def ebola4(ebola2, llit_exponencial, c, k, sigma, mu, nu, spininicial, xg, yg, vxg, vyg, length):
+def ebola4extended(ebola2, llit_exponencial, c, k, sigma, mu, nu, spininicial, xg, yg, vxg, vyg, length):
 
 
 	if ebola2 and llit_exponencial:
@@ -255,6 +255,7 @@ def ebola4(ebola2, llit_exponencial, c, k, sigma, mu, nu, spininicial, xg, yg, v
 
 		def acc_o(y): #els que porten barra baixa són vectors, els altres, nombres  (per a un cert moment t)
 		    #Calculem coses bàsiques
+		    #print("***", y[-1] , "***")
 		    [r_p, r_o, v_o, spin] = y
 		        #PART no temporal
 		    (x,y,z) = r_p
@@ -303,9 +304,12 @@ def ebola4(ebola2, llit_exponencial, c, k, sigma, mu, nu, spininicial, xg, yg, v
 		    #Obtenim acceleració
 		    a_o = a_t + an * N_
 		    
+		    #print([n_t, N_, v_o])
+		    #print(n)
 		    #Calculem canvi spin
 		    vspin = np.linalg.det([n_t, N_, v_o])/n #intentar buscar com fer un determinant
 		    
+		    #print(vspin)
 		    if (abs(spin) > 1e-3):
 		         vspin = vspin - nu*spin*Fn/(abs(spin)*m)
 		    
@@ -422,4 +426,4 @@ def ebola4(ebola2, llit_exponencial, c, k, sigma, mu, nu, spininicial, xg, yg, v
 	#plt.plot(r_o[:,0], r_o[:,1])
 	#plt.plot(d1p['x'], d1p['y'])
 	#plt.show()
-	return np.array(r_o)
+	return np.concatenate((r_o, r_p, v_o, v_p, a_o), 1)

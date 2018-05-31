@@ -1,0 +1,6 @@
+les 4 = llit real/expck x ebola2/ebola3
+
+Optimització global de les 4 amb c = 1.8
+Optimització global de les 4 (pq peti)
+Optimització amb restriccions (c != 1.8 == c = 1.8?)
+Tauleta 3 takes optimitzant respecte una 
